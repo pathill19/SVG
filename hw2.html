@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 2</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(to right, #19f7ff , #7d91ff);
+			color: #fff;
+			text-align: center;
+			font-family: Raleway;
+		}
+		h1{
+			font-weight: bold;
+			font-size: 2.5em;
+		}
+		svg.weather{
+			width: 1em;
+			height: 1em;
+			fill: #fff;
+		}
+		p{
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<h1>Weather Icons</h1>
+
+	<p>
+		Weather occurs in many different forms. Some common types are 
+	<svg class="weather">
+		<use xlink:href="weather.svg#cloudy"/>
+	</svg> cloudy,
+
+	<svg class="weather">
+		<use xlink:href="weather.svg#sunny"/>
+	</svg> sunny,
+
+	<svg class="weather">
+		<use xlink:href="weather.svg#partlysunny"/>
+	</svg> partly sunny,
+
+	<svg class="weather">
+		<use xlink:href="weather.svg#rain"/>
+	</svg> rain,
+
+	<svg class="weather">
+		<use xlink:href="weather.svg#fog"/>
+	</svg> and fog.
+	</p>
+</body>
+</html>
